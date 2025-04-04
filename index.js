@@ -1,33 +1,151 @@
 const repositories = [
   {
-    title: 'Random UUID Version 4 Maker',
-    description: 'A simple UUID version 4 maker',
-    url: '/uuid4',
+    title: 'Noto Serif',
+    description: '구글의 Noto 폰트 프로젝트의 세리프 글꼴',
+    url: 'https://fonts.google.com/noto/specimen/Noto+Serif',
+    className: 'noto-serif',
+    tags: `
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+    `,
   },
   {
-    title: 'Sha256 Hash Encoder',
-    description: 'A simple sha256 hash encoder',
-    url: '/sha256-encoder',
+    title: '부산',
+    description: '부산시 공식 서체',
+    url: 'https://www.busan.go.kr/bhbusan',
+    className: 'busan',
+    tags: `
+      <style>
+        @font-face {
+          font-family: 'Busan';
+          font-style: normal;
+          font-weight: 400;
+          src: url('//fastly.jsdelivr.net/korean-webfonts/1/orgs/govs/busan/Busan/Busan.woff2') format('woff2'),
+          url('//fastly.jsdelivr.net/korean-webfonts/1/orgs/govs/busan/Busan/Busan.woff') format('woff');
+        }
+
+        .busan * {
+          font-family: 'Busan', sans-serif;
+        }
+      </style>
+    `,
   },
   {
-    title: 'Yacht Dice Game',
-    description: 'A simple yacht dice game',
-    url: '/yachtdice',
+    title: '부산바다체',
+    description:
+      '부산체를 기반으로 한 부산바다체는 부산의 바다를 모티브로 하여 디자인되었습니다.',
+    url: 'https://tumblbug.com/busanbada/story',
+    className: 'busan',
+    tags: `
+      <style>
+        @font-face {
+            font-family: 'BusanBada';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BusanBada.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .busanbada * {
+          font-family: 'BusanBada', sans-serif;
+        }
+      </style>
+    `,
   },
   {
-    title: 'Unix Timestamp Calculator',
-    description: 'A simple unix timestamp calculator',
-    url: '/utcalc',
+    title: '한화',
+    description:
+      'Hanwha Group의 공식 서체, 한화그룹의 브랜드 아이덴티티를 담고 있습니다.',
+    url: 'https://www.hanwha.co.kr/company/introduce.do',
+    className: 'hanwha',
+    tags: `
+      <style>
+        @font-face {
+          font-family: 'Hanwha';
+          font-style: 'normal';
+          font-weight: 400;
+          src: url('./BusanFont_Provisional.ttf') format('ttf');
+        }
+
+        .hanwha * {
+          font-family: 'Hanwha', sans-serif;
+        }
+      </style>
+    `,
   },
   {
-    title: 'Nat Du Si',
-    description: 'A simple hangul nat du si clock',
-    url: '/nat-du-si',
+    title: 'Dank Mono',
+    description:
+      'A typeface designed for coding aesthetes with modern displays in mind. Delightful ligatures and an italic variant and bold style.',
+    url: 'https://philpl.gumroad.com/l/dank-mono',
+    className: 'dank-mono',
+    tags: `
+      <style>
+        @font-face {
+          font-family: 'Dank Mono';
+          font-style: 'normal';
+          font-weight: 400;
+          src: url('./DankMono-Regular.otf') format('otf');
+        }
+
+        .dank-mono * {
+          font-family: 'Dank Mono', monospace;
+        }
+      </style>
+    `,
   },
   {
-    title: 'Blog',
-    description: 'Developer blog',
-    url: 'https://medium.com/@telnturtle',
+    title: 'Intel One Mono',
+    description:
+      'A monospace typeface designed with input from a team of low-vision and legally blind developers for optimized legibility.',
+    url: 'https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html',
+    className: 'intel-one-mono',
+    tags: `
+      <style>
+        @font-face {
+          font-family: 'Intel One Mono';
+          font-style: 'normal';
+          font-weight: 400;
+          src: url('./IntelOneMono-Medium.otf') format('otf');
+        }
+
+        .intel-one-mono * {
+          font-family: 'Intel One Mono', monospace;
+        }
+      </style>
+    `,
+  },
+  {
+    title: '지하철체',
+    description: '지하철역에서 볼 수 있는, 옛날부터 사용되어온 글꼴입니다.',
+    url: 'https://blog.naver.com/sendei333/222195624371',
+    className: 'jihacheol',
+    tags: `
+      <style>
+        @font-face {
+          font-family: 'jihacheol';
+          font-style: 'normal';
+          font-weight: 400;
+          src: url('./지하철체.ttf') format('ttf');
+        }
+
+        .jihacheol * {
+          font-family: 'jihacheol', sans-serif;
+        }
+      </style>
+    `,
+  },
+  {
+    title: 'Merriweather',
+    description: '구글 문서에서 제공되는 예쁜 세리프 글꼴',
+    url: 'https://fonts.google.com/specimen/Merriweather',
+    className: 'merriweather',
+    tags: `
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    `,
   },
 ]
 
@@ -42,7 +160,16 @@ shuffle(repositories)
 const outputEl = document.querySelector('#output')
 
 repositories.forEach((repo) => {
+  // const div = document.createElement('div')
+  // div.innerHTML = `
+  //   <a href="${repo.url}" target="_blank">
+  //     <h2>${repo.title}</h2>
+  //     <p>${repo.description}</p>
+  //   </a>
+  // `
+  // outputEl.appendChild(div)
   const div = document.createElement('div')
+  div.className = repo.className
   div.innerHTML = `
     <a href="${repo.url}" target="_blank">
       <h2>${repo.title}</h2>
@@ -50,29 +177,32 @@ repositories.forEach((repo) => {
     </a>
   `
   outputEl.appendChild(div)
+
+  const head = document.querySelector('head')
+  head.insertAdjacentHTML('beforeend', repo.tags)
 })
 
-const setHeadingWeight = (weight) => {
-  // font-variation-settings: ""wght" 606;
-  document.documentElement.style.setProperty('--heading-weight', weight)
-}
+// const setHeadingWeight = (weight) => {
+//   // font-variation-settings: ""wght" 606;
+//   document.documentElement.style.setProperty('--heading-weight', weight)
+// }
 
-{
-  let weight = 900
-  let diff = -1
-  let pause = 0
-  setInterval(() => {
-    if (pause-- > 0) {
-      return
-    }
-    weight += diff
-    if (weight >= 1000) {
-      diff = -1
-      pause = 250
-    } else if (weight <= 100) {
-      diff = 1
-      pause = 250
-    }
-    setHeadingWeight(weight)
-  }, 10)
-}
+// {
+//   let weight = 900
+//   let diff = -1
+//   let pause = 0
+//   setInterval(() => {
+//     if (pause-- > 0) {
+//       return
+//     }
+//     weight += diff
+//     if (weight >= 1000) {
+//       diff = -1
+//       pause = 250
+//     } else if (weight <= 100) {
+//       diff = 1
+//       pause = 250
+//     }
+//     setHeadingWeight(weight)
+//   }, 10)
+// }
