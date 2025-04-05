@@ -65,7 +65,7 @@ const repositories = [
           font-family: 'Hanwha';
           font-style: 'normal';
           font-weight: 400;
-          src: url('./BusanFont_Provisional.ttf') format('ttf');
+          src: url('./02HanwhaR.ttf') format('ttf');
         }
 
         .hanwha * {
@@ -127,7 +127,7 @@ const repositories = [
           font-family: 'jihacheol';
           font-style: 'normal';
           font-weight: 400;
-          src: url('./지하철체.ttf') format('ttf');
+          src: url('./jihacheol.ttf') format('ttf');
         }
 
         .jihacheol * {
@@ -145,6 +145,81 @@ const repositories = [
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+      <style>
+        .merriweather * {
+          font-family: 'Merriweather', serif;
+        }
+      </style>
+    `,
+  },
+  {
+    title: '고운바탕',
+    description: '단정하고 고운 손글씨.',
+    url: 'https://github.com/yangheeryu/Gowun-Batang',
+    className: 'gowun-batang',
+    tags: `
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+
+      <style>
+        .gowun-batang * {
+          font-family: 'Gowun Batang', serif;
+        }
+      </style>
+    `,
+  },
+  {
+    title: 'IBM Plex Sans KR',
+    description: '한국어와 영어를 캐주얼하게 사용하기 좋습니다.',
+    url: 'https://www.ibm.com/plex/',
+    className: 'ibm-plex-sans-kr',
+    tags: `
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+
+      <style>
+        .ibm-plex-sans-kr * {
+          font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+      </style>
+    `,
+  },
+  {
+    title: 'SUITE Variable',
+    description: 'Large Straight',
+    url: 'https://www.ibm.com/plex/',
+    className: 'suite-variable',
+    tags: `
+      <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css" rel="stylesheet">
+
+      <style>
+        .suite-variable * {
+          font-family: 'SUITE Variable', sans-serif;
+        }
+      </style>
+    `,
+  },
+  {
+    title: 'Cascadia Code',
+    description: '<<===<<==||==>>===>>',
+    url: 'https://github.com/microsoft/cascadia-code',
+    className: 'cascadia-code',
+    tags: `
+      <style>
+        @font-face {
+          font-family: 'Cascadia Code';
+          font-style: 'normal';
+          font-weight: 400;
+          src: url('./CascadiaCode.ttf') format('ttf');
+        }
+
+        .cascadia-code * {
+          font-family: 'Cascadia Code', monospace;
+        }
+      </style>
     `,
   },
 ]
