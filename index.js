@@ -125,7 +125,7 @@ const repositories = [
           font-family: 'Intel One Mono';
           font-style: 'normal';
           font-weight: 700;
-          src: url('./IntelOneMono-Bolld.otf') format('opentype');
+          src: url('./IntelOneMono-Bold.otf') format('opentype');
         }
 
         .intel-one-mono * {
