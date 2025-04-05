@@ -248,7 +248,7 @@ shuffle(repositories)
 
 const outputEl = document.querySelector('#output')
 
-repositories.forEach((repo) => {
+repositories.forEach((repo, index) => {
   const div = document.createElement('div')
   div.className = repo.className
   div.innerHTML = `
