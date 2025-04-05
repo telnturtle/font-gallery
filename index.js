@@ -208,16 +208,12 @@ const repositories = [
     url: 'https://github.com/microsoft/cascadia-code',
     className: 'cascadia-code',
     tags: `
-      <style>
-        @font-face {
-          font-family: 'Cascadia Code';
-          font-style: 'normal';
-          font-weight: 400;
-          src: url('./CascadiaCode.ttf') format('ttf');
-        }
+      <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
 
+      <style>
         .cascadia-code * {
           font-family: 'Cascadia Code', monospace;
+          font-variant-ligatures: common-ligatures;
         }
       </style>
     `,
