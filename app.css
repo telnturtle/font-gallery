@@ -28,7 +28,7 @@ h1:is(h1) {
 h2:is(h2) {
     font-size: var(--font-size-body);
     margin: 0;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 p:is(p) {
