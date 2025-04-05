@@ -62,14 +62,20 @@ const repositories = [
     tags: `
       <style>
         @font-face {
-          font-family: '한화 R';
+          font-family: '한화';
           font-style: 'normal';
           font-weight: 400;
           src: url('./02HanwhaR.ttf') format('truetype');
         }
+        @font-face {
+          font-family: '한화';
+          font-style: 'normal';
+          font-weight: 700;
+          src: url('./01HanwhaB.ttf') format('truetype');
+        }
 
         .hanwha * {
-          font-family: '한화 R', sans-serif;
+          font-family: '한화', sans-serif;
         }
       </style>
     `,
