@@ -249,14 +249,6 @@ shuffle(repositories)
 const outputEl = document.querySelector('#output')
 
 repositories.forEach((repo) => {
-  // const div = document.createElement('div')
-  // div.innerHTML = `
-  //   <a href="${repo.url}" target="_blank">
-  //     <h2>${repo.title}</h2>
-  //     <p>${repo.description}</p>
-  //   </a>
-  // `
-  // outputEl.appendChild(div)
   const div = document.createElement('div')
   div.className = repo.className
   div.innerHTML = `
@@ -265,33 +257,14 @@ repositories.forEach((repo) => {
       <p>${repo.description}</p>
     </a>
   `
+  // 초기 opacity 0로 설정 (optional)
+  div.style.opacity = 0
+  // 애니메이션 적용: 0.5초 동안 fadeIn, delay는 index에 따라 0.22초씩 증가
+  div.style.animation = `fadeIn 0.5s ease forwards`
+  div.style.animationDelay = `${index * 0.22}s`
+
   outputEl.appendChild(div)
 
   const head = document.querySelector('head')
   head.insertAdjacentHTML('beforeend', repo.tags)
 })
-
-// const setHeadingWeight = (weight) => {
-//   // font-variation-settings: ""wght" 606;
-//   document.documentElement.style.setProperty('--heading-weight', weight)
-// }
-
-// {
-//   let weight = 900
-//   let diff = -1
-//   let pause = 0
-//   setInterval(() => {
-//     if (pause-- > 0) {
-//       return
-//     }
-//     weight += diff
-//     if (weight >= 1000) {
-//       diff = -1
-//       pause = 250
-//     } else if (weight <= 100) {
-//       diff = 1
-//       pause = 250
-//     }
-//     setHeadingWeight(weight)
-//   }, 10)
-// }
