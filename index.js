@@ -37,7 +37,7 @@ const repositories = [
     description:
       '부산체를 기반으로 한 부산바다체는 부산의 바다를 모티브로 하여 디자인되었습니다.',
     url: 'https://tumblbug.com/busanbada/story',
-    className: 'busan',
+    className: 'busanbada',
     tags: `
       <style>
         @font-face {
@@ -65,7 +65,7 @@ const repositories = [
           font-family: '한화 R';
           font-style: 'normal';
           font-weight: 400;
-          src: url('./02HanwhaR.ttf') format('ttf');
+          src: url('./02HanwhaR.ttf') format('truetype');
         }
 
         .hanwha * {
@@ -86,7 +86,13 @@ const repositories = [
           font-family: 'Dank Mono';
           font-style: 'normal';
           font-weight: 400;
-          src: url('./DankMono-Regular.otf') format('otf');
+          src: url('./DankMono-Regular.otf') format('opentype');
+        }
+        @font-face {
+          font-family: 'Dank Mono';
+          font-style: 'normal';
+          font-weight: 700;
+          src: url('./DankMono-Bold.otf') format('opentype');
         }
 
         .dank-mono * {
@@ -107,7 +113,13 @@ const repositories = [
           font-family: 'Intel One Mono';
           font-style: 'normal';
           font-weight: 400;
-          src: url('./IntelOneMono-Medium.otf') format('otf');
+          src: url('./IntelOneMono-Medium.otf') format('opentype');
+        }
+        @font-face {
+          font-family: 'Intel One Mono';
+          font-style: 'normal';
+          font-weight: 700;
+          src: url('./IntelOneMono-Bolld.otf') format('opentype');
         }
 
         .intel-one-mono * {
@@ -127,7 +139,7 @@ const repositories = [
           font-family: '지하철';
           font-style: 'normal';
           font-weight: 400;
-          src: url('./jihacheol.ttf') format('ttf');
+          src: url('./jihacheol.ttf') format('truetype');
         }
 
         .jihacheol * {
@@ -189,7 +201,7 @@ const repositories = [
   },
   {
     title: 'SUITE Variable',
-    description: 'Large Straight! ㅎㅆㅂㅛㅠ',
+    description: 'Large Straight! 12345',
     url: 'https://sun.fo/suite/',
     className: 'suite-variable',
     tags: `
