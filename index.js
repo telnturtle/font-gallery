@@ -62,14 +62,14 @@ const repositories = [
     tags: `
       <style>
         @font-face {
-          font-family: 'Hanwha';
+          font-family: '한화 R';
           font-style: 'normal';
           font-weight: 400;
           src: url('./02HanwhaR.ttf') format('ttf');
         }
 
         .hanwha * {
-          font-family: 'Hanwha', sans-serif;
+          font-family: '한화 R', sans-serif;
         }
       </style>
     `,
@@ -124,21 +124,21 @@ const repositories = [
     tags: `
       <style>
         @font-face {
-          font-family: 'jihacheol';
+          font-family: '지하철';
           font-style: 'normal';
           font-weight: 400;
           src: url('./jihacheol.ttf') format('ttf');
         }
 
         .jihacheol * {
-          font-family: 'jihacheol', sans-serif;
+          font-family: '지하철', sans-serif;
         }
       </style>
     `,
   },
   {
     title: 'Merriweather',
-    description: '구글 문서에서 제공되는 예쁜 세리프 글꼴',
+    description: 'I used this font for my google docs resume.',
     url: 'https://fonts.google.com/specimen/Merriweather',
     className: 'merriweather',
     tags: `
@@ -189,8 +189,8 @@ const repositories = [
   },
   {
     title: 'SUITE Variable',
-    description: 'Large Straight',
-    url: 'https://www.ibm.com/plex/',
+    description: 'Large Straight! ㅎㅆㅂㅛㅠ',
+    url: 'https://sun.fo/suite/',
     className: 'suite-variable',
     tags: `
       <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css" rel="stylesheet">
@@ -204,7 +204,7 @@ const repositories = [
   },
   {
     title: 'Cascadia Code',
-    description: '<<===<<==||==>>===>>',
+    description: 'Code !== Mono <|| ||> <<===<<==||==>>===>> <~~ Microsoft',
     url: 'https://github.com/microsoft/cascadia-code',
     className: 'cascadia-code',
     tags: `
