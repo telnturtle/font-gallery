@@ -36,6 +36,8 @@ p:is(p) {
     margin: calc(var(--font-size-caption) / 4) 0 0 0;
     line-height: 1;
     font-weight: 400;
+    word-wrap: break-word;
+    word-break: keep-all;
 }
 
 @keyframes fadeIn {
@@ -48,3 +50,19 @@ p:is(p) {
       transform: translateY(0);
     }
   }
+}
+
+/* if mobile */
+@media (max-width: 768px) {
+    #root {
+        padding-bottom: 90vh;
+        padding-top: 5vh;
+    }
+}
+/* if desktop */
+@media (min-width: 769px) {
+    #root {
+        padding-bottom: 50vh;
+        padding-top: 10vh;
+    }
+}
