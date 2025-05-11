@@ -10,6 +10,7 @@ const repositories = [
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: '부산',
@@ -31,6 +32,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: '부산바다체',
@@ -52,6 +54,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: '한화',
@@ -79,6 +82,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: 'Dank Mono',
@@ -106,6 +110,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin'],
   },
   {
     title: 'Intel One Mono',
@@ -133,6 +138,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin'],
   },
   {
     title: '지하철체',
@@ -153,6 +159,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: 'Merriweather',
@@ -170,6 +177,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin'],
   },
   {
     title: '고운바탕',
@@ -187,6 +195,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: 'IBM Plex Sans KR',
@@ -204,6 +213,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: 'SUITE Variable',
@@ -219,6 +229,7 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin', 'korean'],
   },
   {
     title: 'Cascadia Code',
@@ -235,8 +246,21 @@ const repositories = [
         }
       </style>
     `,
+    language: ['latin'],
   },
 ]
+
+const loremIpsum = {
+  latin: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  korean: `요약을 너무, 국제화에 2025년 인간은 사람이나 대응책을 먹이다. 환경이 뛴 나누고 있는데, 세계관 크는데, 같고서 기술과 있는 개입된다. 그 준비에 등 의장의 것 한 낯설어 물은 주요가 확인시키라 아니다. 몰리자 아들에 섞다 모두 직조도 이 퇴근길을 사랑을 있다.`,
+}
+
+repositories.forEach((item) => {
+  item.language.forEach((lang) => {
+    item.loremIpsum = item.loremIpsum || ''
+    item.loremIpsum += `<p class="lorem-ipsum">${loremIpsum[lang]}</p>`
+  })
+})
 
 // shuffle function
 const shuffle = (list) => {
@@ -256,6 +280,7 @@ repositories.forEach((repo, index) => {
       <h2>${repo.title}</h2>
       <p>${repo.description}</p>
     </a>
+    ${repo.loremIpsum}
   `
   // 초기 opacity 0로 설정 (optional)
   div.style.opacity = 0

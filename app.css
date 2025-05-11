@@ -40,6 +40,11 @@ p:is(p) {
     word-break: keep-all;
 }
 
+p:is(p.lorem-ipsum) {
+    font-size: var(--font-size-lorem-ipsum);
+    line-height: normal;
+}
+
 @keyframes fadeIn {
     from {
       opacity: 0;

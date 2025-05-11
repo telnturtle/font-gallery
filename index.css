@@ -3,6 +3,7 @@
     --font-size-body: 32px;
     --font-size-caption: 20px;
     --font-size-caption-small: 16px;
+    --font-size-lorem-ipsum: 14px;
 }
 
 @media (min-width: 769px) {
@@ -11,6 +12,7 @@
         --font-size-body: 40px;
         --font-size-caption: 28px;
         --font-size-caption-small: 24px;
+        --font-size-lorem-ipsum: 22px;
     }
 }
 
